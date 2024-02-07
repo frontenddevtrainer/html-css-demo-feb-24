@@ -1,5 +1,12 @@
-document.addEventListener("DOMContentLoaded", ()=>{
-    const messageContainer = document.querySelector("#message");
-    console.log(messageContainer);
-    messageContainer.innerHTML = "Hi World!!!";
-})
+function abc(message) {
+  return message + " - " + new Date().toISOString();
+}
+
+// one argument 
+const def = (message, message2) => message + "-" + message2 + " - " + new Date().toISOString();
+
+
+console.log(abc("Hello World"));
+
+console.log(def("Hello World", "Hi World!!!"));
+
