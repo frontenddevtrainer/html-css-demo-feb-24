@@ -1,13 +1,15 @@
-function abc(message) {
-  return message + " - " + new Date().toISOString();
-}
+// Map and Set
 
-// one argument
-const def = (message, message2) =>
-  `${message} - ${message2} 
-  : ${new Date().toDateString()}
-  : ${new Date().toISOString()}`;
+const settings = new Map();
+settings.set("API_URL", "https://edureka.co/api/people");
+console.log(settings)
 
-console.log(abc("Hello World"));
-
-console.log(def("Hello World", "Hi World!!!"));
+const uniqueNumbers = new Set();
+uniqueNumbers.add(54)
+uniqueNumbers.add(54)
+uniqueNumbers.add(54)
+uniqueNumbers.add(65)
+uniqueNumbers.add(34)
+uniqueNumbers.add(34)
+uniqueNumbers.add(76)
+console.log(uniqueNumbers);
